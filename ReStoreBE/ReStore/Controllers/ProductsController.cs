@@ -9,7 +9,7 @@ namespace ReStore.Controllers
 {
     [ApiController] //Anotation đánh dấu đây là apicontroller
     [Route("api/[controller]")]
-    public class ProductsController : Controller
+    public class ProductsController : BaseApiController
     {
         private readonly StoreContext _context;
         public ProductsController(StoreContext context)
